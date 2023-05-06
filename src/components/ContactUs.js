@@ -21,11 +21,11 @@ function ContactUs({ showContactUs, onCloseClick }) {
 
   return (
     showForm &&
-    <div className={`form-container ${showContactUs ? "show" : ""}`}>
+    <div className={`contact-us-form-container ${showContactUs ? "show" : ""}`}>
       <button className="close-btn" onClick={handleClose}>X</button>
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="contact-us-form-group">
           <label htmlFor="username">Username</label>
           <input
             type="text"
@@ -35,7 +35,7 @@ function ContactUs({ showContactUs, onCloseClick }) {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="contact-us-form-group">
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -45,7 +45,7 @@ function ContactUs({ showContactUs, onCloseClick }) {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="contact-us-form-group">
           <label htmlFor="contact-number">Contact Number</label>
           <input
             type="tel"
@@ -55,7 +55,7 @@ function ContactUs({ showContactUs, onCloseClick }) {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="contact-us-form-group">
           <label htmlFor="query">Query</label>
           <textarea
             id="query"
