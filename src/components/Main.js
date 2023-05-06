@@ -9,7 +9,8 @@
     return (
       <main className="main">
         <div className="carousel-root">
-          <Carousel showArrows={true} showThumbs={false} style={{ position: 'absolute', top: 0, left: 0, zIndex: 2 }}>
+          <Carousel showArrows={true} autoPlay={true} interval={1500} infiniteLoop={true}  showThumbs={false} style={{ position: 'absolute', top: 0, left: 0, zIndex: 2 }}>
+          {/* transitionTime={0} */}
             <div>
               <img src={SampleResume1} alt="Sample Resume 1" />
             </div>
